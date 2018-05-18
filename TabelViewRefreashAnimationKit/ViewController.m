@@ -20,16 +20,16 @@
     [super viewDidLoad];
     self.title = @"TabelView动画测试";
     _titles = @[
-                @"AYTableViewAnimationTypeMove",
-                @"AYTableViewAnimationTypeMoveSpring",
-                @"AYTableViewAnimationTypeAlpha",
-                @"AYTableViewAnimationTypeFall",
-                @"AYTableViewAnimationTypeShake",
-                @"AYTableViewAnimationTypeOverTurn",
-                @"AYTableViewAnimationTypeToTop",
-                @"AYTableViewAnimationTypeSpringList",
-                @"AYTableViewAnimationTypeShrinkToTop",
-                @"AYTableViewAnimationTypeLayDown"
+                @"AYTypeMoveLeftToRight",
+                @"AYTypeMoveSpringLeftToRight",
+                @"AYTypeTopToBottomAlpha",
+                @"AYTypeTopToBottomFall",
+                @"AYTypeLeftAndRightShake",
+                @"AYTypeOverTurn",
+                @"AYTypeBottomToTop",
+                @"AYTypeBottomToTopSpringList",
+                @"AYTypeBottomToTopShrink",
+                @"AYTypeTopToBottomShrink"
                 ];
     
     [self.view addSubview:self.tableView];

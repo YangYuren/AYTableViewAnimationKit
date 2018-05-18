@@ -190,28 +190,6 @@
             cell.layer.transform = CATransform3DIdentity;
         }];
     }
-    
-}
-
-+ (void)roteAnimationWithTableView:(UITableView *)tableView {
-    NSArray *cells = tableView.visibleCells;
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
-    animation.fromValue = @(-M_PI);
-    animation.toValue = 0;
-    animation.duration = 0.3;
-    animation.removedOnCompletion = NO;
-    animation.repeatCount = 3;
-    animation.fillMode = kCAFillModeForwards;
-    animation.autoreverses = NO;
-    for (int i = 0; i < cells.count; i++) {
-        UITableViewCell *cell = [cells objectAtIndex:i];
-        cell.alpha = 0.0;
-        [UIView animateWithDuration:0.1 delay:i*0.25 options:0 animations:^{
-            cell.alpha = 1.0;
-        } completion:^(BOOL finished) {
-            [cell.layer addAnimation:animation forKey:@"rotationYkey"];
-        }];
-    }
 }
 
 @end

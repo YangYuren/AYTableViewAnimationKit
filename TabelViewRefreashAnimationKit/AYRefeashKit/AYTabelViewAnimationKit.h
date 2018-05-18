@@ -10,17 +10,16 @@
 #import <UIKit/UIKit.h>
 //每一种动画对应的枚举
 typedef NS_ENUM(NSInteger,AYTableViewAnimationType){
-    AYTableViewAnimationTypeMove = 0,//从左往右划出
-    AYTableViewAnimationTypeMoveSpring = 0,//从左往右划出，带弹簧效果
-    AYTableViewAnimationTypeAlpha,//从上往下渐渐显示
-    AYTableViewAnimationTypeFall,//从上往下堆积显示
-    AYTableViewAnimationTypeShake,//左右交叉划出
-    AYTableViewAnimationTypeOverTurn,//翻转显示
-    AYTableViewAnimationTypeToTop,//从下往上堆积显示
-    AYTableViewAnimationTypeSpringList,//从下往上堆积显示，带弹簧效果
-    AYTableViewAnimationTypeShrinkToTop,//从下往上滑动显示
-    AYTableViewAnimationTypeLayDown,//从上往下滑动显示
-    AYTableViewAnimationTypeRote,//翻转显示
+    AYTypeMoveLeftToRight = 0,//从左往右划出
+    AYTypeMoveSpringLeftToRight = 0,//从左往右划出，带弹簧效果
+    AYTypeTopToBottomAlpha,//从上往下渐渐显示
+    AYTypeTopToBottomFall,//从上往下堆积显示
+    AYTypeLeftAndRightShake,//左右交叉划出
+    AYTypeOverTurn,//翻转显示
+    AYTypeBottomToTop,//从下往上堆积显示
+    AYTypeBottomToTopSpringList,//从下往上堆积显示，带弹簧效果
+    AYTypeBottomToTopShrink,//从下往上滑动显示
+    AYTypeTopToBottomShrink,//从上往下滑动显示
 };
 
 @interface AYTabelViewAnimationKit : NSObject<UICollisionBehaviorDelegate>
